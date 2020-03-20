@@ -10,7 +10,7 @@ set -x
 
 
 # This is populated by our secret from the Workflow file.
-if [[ -z "$INPUT_REPO-TOKEN" ]]; then
+if [[ -z "${INPUT_REPO-TOKEN}" ]]; then
 	echo "Set the GITHUB_TOKEN env variable."
 	exit 1
 fi
