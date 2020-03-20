@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 
 
 class CheckRun:
-    GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
+    GITHUB_TOKEN = os.environ['INPUT_REPO-TOKEN']
     GITHUB_EVENT_PATH = os.environ['GITHUB_EVENT_PATH']
 
     URI = 'https://api.github.com'
